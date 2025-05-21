@@ -4,6 +4,8 @@
   </head>
   
   <body>
-    <?php echo '<h1>Assignment 1</p>'; ?> 
+    <h1>Assignment 1</h1> 
+    <p><a href="./login.php"/>Click to login</p>
   </body>
+      
 </html>
