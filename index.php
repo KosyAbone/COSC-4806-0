@@ -16,7 +16,8 @@
   <body>
     <main>
       <h1>Assignment 1</h1> 
-      <h2> Welcome, <?=$_SESSION['username']?> </h2>
+      <h2> Welcome, <?=$_SESSION['username']?>! </h2>
+      <p>Date: <?=date("l, F j, Y, g:i A");?></p><br><br>
     </main>
   </body>
 
