@@ -5,11 +5,11 @@
 
   <body>
     <h1>Login form</h1> 
-    <form action="/action_page.php">
-      <label for="fname">First name:</label><br>
-      <input type="text" id="fname" name="fname" value="John"><br><br>
-      <label for="lname">Last name:</label><br>
-      <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <form action="/validate.php" method="post">
+      <label for="username">Username:</label><br>
+      <input type="text" id="username" name="username"><br><br>
+      <label for="password">Password:</label><br>
+      <input type="text" id="password" name="password" val><br><br>
       <input type="submit" value="Submit">
     </form>
     
