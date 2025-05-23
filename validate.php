@@ -6,6 +6,7 @@
   $valid_password = "test";
 
   $username = $_REQUEST['username'];
+  $_SESSION['username'] = $username;
   $password = $_REQUEST['password'];
 
   if($valid_username == $username && $valid_password == $password){
