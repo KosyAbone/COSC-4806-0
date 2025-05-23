@@ -6,6 +6,11 @@
   $username = $_REQUEST['username'];
   $password = $_REQUEST['password'];
 
-  echo $username;
+  if($valid_username == $username && $valid_password == $password){
+    echo 'success';
+  }
+  else{
+    echo 'fail';
+  }
 
 ?>
