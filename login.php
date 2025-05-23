@@ -17,7 +17,7 @@
     <title>Login Page</title>
   </head>
 
-  <body>
+  <body style="text-align: center">
     <h1>Login form</h1> 
     <form action="/validate.php" method="post">
       <label for="username">Username:</label><br>

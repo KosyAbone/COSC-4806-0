@@ -5,6 +5,8 @@
       header('Location: login.php');
       exit();
   }
+
+  date_default_timezone_set('America/Toronto');
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +15,7 @@
     <title>Kosi's HomePage</title>
   </head>
   
-  <body>
+  <body style="text-align:center">
     <main>
       <h1>Assignment 1</h1> 
       <h2> Welcome, <?=$_SESSION['username']?>! </h2>
