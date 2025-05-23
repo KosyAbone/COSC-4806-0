@@ -1,5 +1,10 @@
 <?php
-session_start();
+  session_start();
+  // Redirect to login if not authenticated
+  if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
+      header('Location: login.php');
+      exit();
+  }
 ?>
 
 <!DOCTYPE html>

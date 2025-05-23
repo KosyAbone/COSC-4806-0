@@ -10,6 +10,7 @@
   $password = $_REQUEST['password'];
 
   if($valid_username == $username && $valid_password == $password){
+    $_SESSION['authenticated'] = true;
     header('location: /');
   }
   else{
