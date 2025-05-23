@@ -21,7 +21,8 @@
     else{
       $_SESSION['failed_attempts'] += 1;
     }
-    echo 'This is unsuccessful attempt number ' . $_SESSION['failed_attempts'];
+    $_SESSION['login_error'] = "Login failed. You have unsuccesfully attempted " . $_SESSION['failed_attempts'] . " time(s).";
+    header("Location: login.php");
   }
 
 ?>

@@ -3,6 +3,12 @@
   if (isset($_SESSION['authenticated']) && $_SESSION['authenticated']) {
       header('Location: index.php');
   }
+
+  $error = '';
+  if (isset($_SESSION['login_error'])) {
+      $error = $_SESSION['login_error'];
+      unset($_SESSION['login_error']);
+  }
 ?>
 
 <!DOCTYPE html>
@@ -17,9 +23,14 @@
       <label for="username">Username:</label><br>
       <input type="text" id="username" name="username"><br><br>
       <label for="password">Password:</label><br>
-      <input type="text" id="password" name="password" val><br><br>
+      <input type="password" id="password" name="password" val><br><br>
       <input type="submit" value="Submit">
+      
     </form>
+    
+    <?php if (!empty($error)): ?>
+          <p style="color: red;"><?= $error ?></p>
+      <?php endif; ?>
     
   </body>
 
