@@ -14,9 +14,13 @@
   </head>
   
   <body>
-    <h1>Assignment 1</h1> 
-    <h2> Welcome <?=$_SESSION['username']?> </h2>
+    <main>
+      <h1>Assignment 1</h1> 
+      <h2> Welcome, <?=$_SESSION['username']?> </h2>
+    </main>
   </body>
 
-  
+  <footer>
+    <p><a href="logout.php">Click here to logout</p>
+  </footer>
 </html>
